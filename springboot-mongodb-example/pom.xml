@@ -10,6 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.fatihk.examples.springboot</groupId>
     <artifactId>springboot-mongodb-example</artifactId>
 
     <properties>
