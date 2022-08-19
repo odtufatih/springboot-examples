@@ -11,6 +11,7 @@
     <modules>
         <module>springboot-mongodb-example</module>
         <module>springboot-postgresql-example</module>
+        <module>springboot-elasticsearch-example</module>
     </modules>
 
     <properties>
