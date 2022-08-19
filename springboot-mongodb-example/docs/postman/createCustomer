@@ -1,0 +1,23 @@
+Request:
+
+{
+    "customerNo": "1",
+    "firstName": "Ahmet",
+    "lastName": "Yıldırım",
+    "dateOfBirth": "16031999",
+    "homeAddress": {
+        "city": "İstanbul",
+        "county": "Kartal",
+        "district": "Cevizli",
+        "zipCode": 84300
+    },
+    "workAddress": {
+        "city": "İstanbul",
+        "county": "Şişli",
+        "district": "Zincirlikuyu",
+        "zipCode": 84305
+    },
+    "hobbies":["Reading books", "Sports", "Travelling"],
+    "languages":[{"name": "Turkish", "degree":"Native"},
+                 {"name": "English", "degree":"Intermediate"}]
+}
