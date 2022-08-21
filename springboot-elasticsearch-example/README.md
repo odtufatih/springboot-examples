@@ -15,7 +15,7 @@ Following elasticsearch urls may be checked to see the details of the index and 
 
 Following urls may be checked to test the spring boot application
 
-http://localhost:8080/books
-http://localhost:8080/books/1
-http://localhost:8080/books/search/Jack?page=0&&size=1
+* http://localhost:8080/books
+* http://localhost:8080/books/1
+* http://localhost:8080/books/search/Jack?page=0&&size=1
 
