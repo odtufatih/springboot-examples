@@ -1,3 +1,5 @@
+docker-compose.yml file is located under springboot-elasticsearch-example\src\main\resources path.
+
 To start up elasticsearch as a local docker container:
 
 docker-compose -f docker-compose.yml up -d
