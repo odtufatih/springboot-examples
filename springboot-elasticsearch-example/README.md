@@ -10,8 +10,8 @@ books index will be created and some dummy documents will be saved under this in
 
 Following elasticsearch urls may be checked to see the details of the index and the document with id 1.
 
-http://localhost:9200/books/
-http://localhost:9200/books/_doc/1
+* http://localhost:9200/books/
+* http://localhost:9200/books/_doc/1
 
 Following urls may be checked to test the spring boot application
 
