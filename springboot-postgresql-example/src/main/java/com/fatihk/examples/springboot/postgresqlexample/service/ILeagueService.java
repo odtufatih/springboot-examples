@@ -12,4 +12,6 @@ public interface ILeagueService {
 
     public LeagueDto updateLeague(int id, LeagueDto leagueDto);
 
+    public void deleteLeague(int id);
+
 }

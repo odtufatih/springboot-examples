@@ -12,7 +12,7 @@ public interface ITeamService {
 
     public TeamDto updateTeam(long id, TeamDto leagueDto);
 
-    void deleteTeam(long id);
+    public void deleteTeam(long id);
 
     List<TeamDto> getTeamsByLeagueId(int id);
 }

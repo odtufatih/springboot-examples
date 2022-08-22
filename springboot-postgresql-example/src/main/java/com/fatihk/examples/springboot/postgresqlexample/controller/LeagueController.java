@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -20,7 +21,7 @@ public class LeagueController {
     private final ITeamService teamService;
 
     @PostMapping
-    public ResponseEntity<LeagueDto> createLeague(@RequestBody LeagueDto leagueDto){
+    public ResponseEntity<LeagueDto> createLeague(@RequestBody @Valid LeagueDto leagueDto){
         return new ResponseEntity<>(leagueService.createLeague(leagueDto), HttpStatus.CREATED);
     }
 
@@ -35,8 +36,12 @@ public class LeagueController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<LeagueDto> updateLeague(@PathVariable("id") int id, @RequestBody LeagueDto leagueDto){
+    public ResponseEntity<LeagueDto> updateLeague(@PathVariable("id") int id, @RequestBody @Valid LeagueDto leagueDto){
         return new ResponseEntity<>(leagueService.updateLeague(id, leagueDto), HttpStatus.OK);
     }
 
+    @DeleteMapping("/{id}")
+    public void deleteLeague(@PathVariable int id){
+        leagueService.deleteLeague(id);
+    }
 }

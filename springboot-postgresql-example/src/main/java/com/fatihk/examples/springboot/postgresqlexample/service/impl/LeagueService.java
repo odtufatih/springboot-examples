@@ -46,4 +46,10 @@ public class LeagueService implements ILeagueService {
         return leagueDto;
     }
 
+    @Override
+    public void deleteLeague(int id) {
+        leagueRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("No league with id:" + id));
+        leagueRepository.deleteById(id);
+    }
+
 }

@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -21,7 +22,7 @@ public class TeamController {
     private final IPlayerService playerService;
 
     @PostMapping
-    public ResponseEntity<TeamDto> createTeam(@RequestBody TeamDto team){
+    public ResponseEntity<TeamDto> createTeam(@RequestBody @Valid TeamDto team){
         team = teamService.createTeam(team);
         return new ResponseEntity<>(team, HttpStatus.CREATED);
     }
@@ -37,7 +38,7 @@ public class TeamController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<TeamDto> updateLeague(@PathVariable("id") int id, @RequestBody TeamDto teamDto){
+    public ResponseEntity<TeamDto> updateLeague(@PathVariable("id") int id, @RequestBody @Valid TeamDto teamDto){
         return ResponseEntity.ok(teamService.updateTeam(id, teamDto));
     }
 
