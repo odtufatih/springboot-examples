@@ -12,21 +12,18 @@ import javax.annotation.PostConstruct;
 @Service
 public class NotificationProducer {
 
-    @Value("${exchange.name}")
-    private String exchangeName;
-
     @Value("${routing.name}")
     private String routingName;
 
-    private final RabbitTemplate rabbitTemplate;
+    @Value("${exchange.name}")
+    private String exchangeName;
+
 
     @Autowired
-    public NotificationProducer(RabbitTemplate rabbitTemplate) {
-        this.rabbitTemplate = rabbitTemplate;
-    }
+    private RabbitTemplate rabbitTemplate;
 
-    public void sendMessage(Notification notification){
-        System.out.println("Notification sent, id: : " + notification.getNotificationId());
+    public void sendToQueue(Notification notification) {
+        System.out.println("Notification Sent ID : " + notification.getNotificationId());
         rabbitTemplate.convertAndSend(exchangeName, routingName, notification);
     }
 

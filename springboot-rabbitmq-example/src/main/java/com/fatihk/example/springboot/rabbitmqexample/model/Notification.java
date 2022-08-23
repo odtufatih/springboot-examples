@@ -8,9 +8,9 @@ import java.util.Date;
 @Data
 public class Notification implements Serializable {
 
-    private long notificationId;
+    private String notificationId;
     private Date createdAt;
-    private Boolean isSeen;
+    private Boolean seen;
     private String message;
 
 }

@@ -7,8 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class NotificationListener {
 
-    //there is a problem, rabbit listener does not work somehow.
-    @RabbitListener(queues = "test-queue")
+    @RabbitListener(queues = "${queue.name}")
     public void handleMessage(Notification notification){
         System.out.println("Notification received: " + notification);
     }
