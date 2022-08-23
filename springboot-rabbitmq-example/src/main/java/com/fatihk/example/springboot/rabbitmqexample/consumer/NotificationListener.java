@@ -2,8 +2,6 @@ package com.fatihk.example.springboot.rabbitmqexample.consumer;
 
 import com.fatihk.example.springboot.rabbitmqexample.model.Notification;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
-import org.springframework.amqp.rabbit.annotation.RabbitListenerConfigurer;
-import org.springframework.amqp.rabbit.listener.RabbitListenerEndpointRegistrar;
 import org.springframework.stereotype.Service;
 
 @Service

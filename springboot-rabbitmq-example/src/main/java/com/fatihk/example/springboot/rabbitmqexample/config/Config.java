@@ -28,18 +28,7 @@ public class Config {
     @Value("${exchange.name}")
     private String exchangeName;
 
-    @Bean
-    public CachingConnectionFactory connectionFactory() {
-        CachingConnectionFactory cachingConnectionFactory = new CachingConnectionFactory("localhost");
-        cachingConnectionFactory.setUsername(username);
-        cachingConnectionFactory.setPassword(password);
-        return cachingConnectionFactory;
-    }
 
-    @Bean
-    public RabbitTemplate rabbitTemplate() {
-        return new RabbitTemplate(connectionFactory());
-    }
 
     @Bean
     public Queue queue() {
