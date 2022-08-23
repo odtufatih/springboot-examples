@@ -7,12 +7,7 @@ import org.springframework.amqp.rabbit.listener.RabbitListenerEndpointRegistrar;
 import org.springframework.stereotype.Service;
 
 @Service
-public class NotificationListener implements RabbitListenerConfigurer {
-
-    @Override
-    public void configureRabbitListeners(RabbitListenerEndpointRegistrar rabbitListenerEndpointRegistrar) {
-        System.out.println("here");
-    }
+public class NotificationListener {
 
     //there is a problem, rabbit listener does not work somehow.
     @RabbitListener(queues = "test-queue")
