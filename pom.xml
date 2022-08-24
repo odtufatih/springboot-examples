@@ -14,6 +14,7 @@
         <module>springboot-elasticsearch-example</module>
         <module>springboot-rabbitmq-example</module>
         <module>springboot-dockerization-example</module>
+        <module>springboot-aop-example</module>
     </modules>
 
     <properties>
