@@ -1,6 +1,6 @@
-package com.fatihk.examples.springboot.dockerizationexample.rabbitmqexample.producer;
+package com.fatihk.examples.springboot.rabbitmqexample.producer;
 
-import com.fatihk.examples.springboot.dockerizationexample.rabbitmqexample.model.Notification;
+import com.fatihk.examples.springboot.rabbitmqexample.model.Notification;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

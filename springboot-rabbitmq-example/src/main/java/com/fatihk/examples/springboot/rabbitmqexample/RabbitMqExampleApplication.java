@@ -1,4 +1,4 @@
-package com.fatihk.examples.springboot.dockerizationexample.rabbitmqexample;
+package com.fatihk.examples.springboot.rabbitmqexample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
