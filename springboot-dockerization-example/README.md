@@ -20,3 +20,8 @@ docker run -p8080:8080 springboot-dockerization-example:1.0.0
 
 * You can also check for docker-maven-plugin of io.fabric8 or spotify docker plugin
 as another option
+  
+
+After running the docker image test the following url:
+
+http://localhost:8080
