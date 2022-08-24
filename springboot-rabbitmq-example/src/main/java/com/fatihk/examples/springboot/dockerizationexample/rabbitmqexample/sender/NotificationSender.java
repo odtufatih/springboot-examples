@@ -1,7 +1,7 @@
-package com.fatihk.example.springboot.rabbitmqexample.sender;
+package com.fatihk.examples.springboot.dockerizationexample.rabbitmqexample.sender;
 
-import com.fatihk.example.springboot.rabbitmqexample.model.Notification;
-import com.fatihk.example.springboot.rabbitmqexample.producer.NotificationProducer;
+import com.fatihk.examples.springboot.dockerizationexample.rabbitmqexample.model.Notification;
+import com.fatihk.examples.springboot.dockerizationexample.rabbitmqexample.producer.NotificationProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.DependsOn;
 import org.springframework.stereotype.Component;

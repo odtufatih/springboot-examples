@@ -13,6 +13,7 @@
         <module>springboot-postgresql-example</module>
         <module>springboot-elasticsearch-example</module>
         <module>springboot-rabbitmq-example</module>
+        <module>springboot-dockerization-example</module>
     </modules>
 
     <properties>

@@ -1,4 +1,4 @@
-package com.fatihk.example.springboot.rabbitmqexample.model;
+package com.fatihk.examples.springboot.dockerizationexample.rabbitmqexample.model;
 
 import lombok.Data;
 

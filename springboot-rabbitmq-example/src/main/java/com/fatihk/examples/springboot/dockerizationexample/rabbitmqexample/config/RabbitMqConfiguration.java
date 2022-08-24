@@ -1,4 +1,4 @@
-package com.fatihk.example.springboot.rabbitmqexample.config;
+package com.fatihk.examples.springboot.dockerizationexample.rabbitmqexample.config;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;

@@ -1,6 +1,6 @@
-package com.fatihk.example.springboot.rabbitmqexample.consumer;
+package com.fatihk.examples.springboot.dockerizationexample.rabbitmqexample.consumer;
 
-import com.fatihk.example.springboot.rabbitmqexample.model.Notification;
+import com.fatihk.examples.springboot.dockerizationexample.rabbitmqexample.model.Notification;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Service;
 
