@@ -15,6 +15,7 @@
         <module>springboot-rabbitmq-example</module>
         <module>springboot-dockerization-example</module>
         <module>springboot-aop-example</module>
+        <module>springboot-resttemplate-webclient-example</module>
     </modules>
 
     <properties>
