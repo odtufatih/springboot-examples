@@ -17,6 +17,7 @@
         <module>springboot-aop-example</module>
         <module>springboot-resttemplate-webclient-example</module>
         <module>springboot-redis-cache-example</module>
+        <module>springboot-pagination-example</module>
     </modules>
 
     <properties>
