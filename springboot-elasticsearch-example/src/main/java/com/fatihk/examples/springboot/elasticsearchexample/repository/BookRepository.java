@@ -1,6 +1,6 @@
-package com.fatih.examples.springboot.elasticsearchexample.repository;
+package com.fatihk.examples.springboot.elasticsearchexample.repository;
 
-import com.fatih.examples.springboot.elasticsearchexample.model.Book;
+import com.fatihk.examples.springboot.elasticsearchexample.model.Book;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 

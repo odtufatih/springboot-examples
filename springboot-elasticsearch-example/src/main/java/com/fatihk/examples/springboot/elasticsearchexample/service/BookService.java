@@ -1,6 +1,6 @@
-package com.fatih.examples.springboot.elasticsearchexample.service;
+package com.fatihk.examples.springboot.elasticsearchexample.service;
 
-import com.fatih.examples.springboot.elasticsearchexample.model.Book;
+import com.fatihk.examples.springboot.elasticsearchexample.model.Book;
 import org.springframework.data.domain.PageRequest;
 
 import java.util.List;

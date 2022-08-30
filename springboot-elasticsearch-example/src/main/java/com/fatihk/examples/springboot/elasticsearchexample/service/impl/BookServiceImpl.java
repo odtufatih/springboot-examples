@@ -1,8 +1,8 @@
-package com.fatih.examples.springboot.elasticsearchexample.service.impl;
+package com.fatihk.examples.springboot.elasticsearchexample.service.impl;
 
-import com.fatih.examples.springboot.elasticsearchexample.model.Book;
-import com.fatih.examples.springboot.elasticsearchexample.repository.BookRepository;
-import com.fatih.examples.springboot.elasticsearchexample.service.BookService;
+import com.fatihk.examples.springboot.elasticsearchexample.model.Book;
+import com.fatihk.examples.springboot.elasticsearchexample.repository.BookRepository;
+import com.fatihk.examples.springboot.elasticsearchexample.service.BookService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;

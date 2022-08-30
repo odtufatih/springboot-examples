@@ -1,4 +1,4 @@
-package com.fatih.examples.springboot.elasticsearchexample;
+package com.fatihk.examples.springboot.elasticsearchexample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

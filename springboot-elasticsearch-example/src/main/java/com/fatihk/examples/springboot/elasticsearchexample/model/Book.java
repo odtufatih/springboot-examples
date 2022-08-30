@@ -1,4 +1,4 @@
-package com.fatih.examples.springboot.elasticsearchexample.model;
+package com.fatihk.examples.springboot.elasticsearchexample.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
