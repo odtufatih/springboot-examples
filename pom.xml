@@ -18,7 +18,8 @@
         <module>springboot-resttemplate-webclient-example</module>
         <module>springboot-redis-cache-example</module>
         <module>springboot-pagination-example</module>
-        <module>springboot-events</module>
+        <module>springboot-events-example</module>
+        <module>springboot-kafka-example</module>
     </modules>
 
     <properties>
