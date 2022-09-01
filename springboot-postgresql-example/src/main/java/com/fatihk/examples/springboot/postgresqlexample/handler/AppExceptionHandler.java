@@ -15,7 +15,7 @@ public class AppExceptionHandler {
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
     @ResponseBody
-    public ResponseEntity<List> ethodArgumentNotValidException(final MethodArgumentNotValidException ex) {
+    public ResponseEntity<List> methodArgumentNotValidException(final MethodArgumentNotValidException ex) {
 
        List list = ex.getBindingResult().getAllErrors().stream()
                .map(fieldError -> fieldError.getDefaultMessage())
