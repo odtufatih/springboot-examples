@@ -20,7 +20,7 @@
         <module>springboot-pagination-example</module>
         <module>springboot-events-example</module>
         <module>springboot-kafka-example</module>
-        <module>spring-boot-jwt-example</module>
+        <module>springboot-jwt-example</module>
     </modules>
 
     <properties>
