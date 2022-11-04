@@ -14,14 +14,16 @@ public class GreetingController {
 
     @RequestMapping("/")
     public String greeting(HttpServletRequest request, @RequestParam("msg") String msg){
-        List<String> msgs = (List<String>) request.getSession().getAttribute("MY_SESSION_MESSAGES");
+        HttpSession session = request.getSession();
+        System.out.println("Session id:" + session.getId());
+        List<String> msgs = (List<String>) session.getAttribute("MY_SESSION_MESSAGES");
         if (msgs == null) {
             msgs = new ArrayList<>();
         }
         msgs.add(msg);
         System.out.println(msgs);
         //session is stored in redis
-        request.getSession().setAttribute("MY_SESSION_MESSAGES", msgs);
+        session.setAttribute("MY_SESSION_MESSAGES", msgs);
         return "Welcome admin";
     }
 
